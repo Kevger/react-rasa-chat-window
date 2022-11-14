@@ -1,0 +1,60 @@
+.dots {
+    position: relative;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.5em;
+    background-color: #FF525A;
+    animation: middleAnim 1s infinite linear;
+}
+
+.dots::before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    left: -1em;
+    border-radius: inherit;
+    background-color: #FF525A;
+    animation: leftAnim 1s infinite linear;
+    position: absolute;
+}
+
+.dots::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    left: 1em;
+    border-radius: inherit;
+    background-color: #FF525A;
+    animation: rightAnim 1s infinite linear;
+    position: absolute;
+}
+
+@keyframes leftAnim {
+    75% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1.0, 1.0);
+    }
+}
+
+@keyframes middleAnim {
+    50% {
+        transform: scale(1, 1.5);
+    }
+}
+
+@keyframes rightAnim {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, 0.5);
+    }
+
+    75% {
+        transform: scale(1, 1.5);
+    }
+}

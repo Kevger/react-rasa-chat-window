@@ -1,0 +1,26 @@
+{
+  "name": "react-rasa-chat-window",
+  "version": "1.0.0",
+  "description": "A react rasa chat window build on mantine.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "rasa",
+    "chat",
+    "window",
+    "mantine"
+  ],
+  "author": "germanke https://github.com/Kevger",
+  "license": "ISC",
+  "dependencies": {
+    "@mantine/core": "^5.7.2",
+    "react-rasa-hook": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "typescript": "^4.8.4"
+  }
+}
