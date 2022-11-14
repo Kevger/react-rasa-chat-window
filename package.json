@@ -17,10 +17,13 @@
   "license": "ISC",
   "dependencies": {
     "@mantine/core": "^5.7.2",
-    "react-rasa-hook": "^1.0.2"
+    "@tabler/icons": "^1.111.0",
+    "react-rasa-hook": "^1.0.2",
+    "react-speech-recognition": "^3.10.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.25",
+    "@types/react-speech-recognition": "^3.9.0",
     "typescript": "^4.8.4"
   }
 }

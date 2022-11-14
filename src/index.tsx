@@ -14,6 +14,14 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
+
+/**
+ * Chat window react component for Rasa. Builds up on mantine. 
+ * @param  {[(string) => void]} onUtterance A callback which will be called with the latest utterance of the bot. 
+ * @param  {string} rasaServerUrl Address to the rasa webserver
+ * @param  {string} rasaSocketPath Socket.io path of the rasa webserver. The default is /socket.io/
+ * @return JSX.Element which represents the chat window component.
+ */
 export default function Chat({
   onUtterance,
   rasaServerUrl,
